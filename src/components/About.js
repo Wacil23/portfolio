@@ -39,6 +39,7 @@ const About = () => {
                     <span className='a -translate-y-9 flex opacity-0'>
                         I am a passionate and creative front-end web developer based in Lille, France with significant experience in designing and creating websites.
                     </span>
+                    <br />
                     <span className='b -translate-y-9 flex opacity-0'>
                         My personal projects demonstrate my ability to produce modern and attractive designs and develop complex features with a keen eye for detail.
                     </span>

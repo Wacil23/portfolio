@@ -36,7 +36,7 @@ const Banner = () => {
     };
 
     useEffect(() => {
-        ctx('.cont', '-300rem center', '+=700', 5, 'restart none reverse reverse', '.mario', { x: window.innerWidth - 250 })
+        ctx('.cont', '-300rem center', '+=700', 5, 'restart none reverse reverse', '.mario', { x: window.innerWidth })
     }, [])
 
     useEffect(() => {

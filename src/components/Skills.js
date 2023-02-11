@@ -8,24 +8,24 @@ gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
     let [target, setTarget] = useState(localStorage.getItem('target') || 'front')
     const { settingOpen, primaryLightColor, primaryDarkColor } = useStateContext()
-    let [wFront, setWFront] = useState("20%")
+    let [wFront, setWFront] = useState("30%")
     let [wBack, setWBack] = useState(0)
     let [wOther, setWOther] = useState(0)
     const circonference = 63 * 2 * Math.PI
     useEffect(() => {
         const a = localStorage.getItem('target')
         if (a === 'front') {
-            setWFront('20%')
+            setWFront('30%')
             setWBack(0)
             setWOther(0)
         }
         if (a === 'back') {
-            setWBack('20%')
+            setWBack('28%')
             setWFront(0)
             setWOther(0)
         }
         if (a === 'other') {
-            setWOther('15%')
+            setWOther('23%')
             setWFront(0)
             setWBack(0)
         }

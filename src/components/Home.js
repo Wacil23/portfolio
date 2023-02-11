@@ -5,6 +5,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 import Skills from './Skills';
 import Banner from './Banner';
 import Projects from './Projects';
+import Footer from './Footer';
 
 const Home = () => {
     const { containerBg, currentColor } = useStateContext();
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             <Skills />
             <Projects />
+            <Footer />
         </div>
     )
 }
