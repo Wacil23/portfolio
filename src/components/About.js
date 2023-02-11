@@ -1,16 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useStateContext } from '../contexts/ContextProvider';
-import { MdExpandMore } from 'react-icons/md'
-
 gsap.registerPlugin(ScrollTrigger);
-
 const About = () => {
     const { content } = useStateContext();
     const component = useRef(null)
-    const [learnMore, setLearnMore] = useState(false)
-
     useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.timeline({
@@ -27,14 +22,11 @@ const About = () => {
                 .to('.b', { transform: 'translateY(5px)', opacity: 1, }, 0.6)
                 .to('.c', { transform: 'translateY(10px)', opacity: 1, }, 0.9)
         }, component)
-
         return () => ctx.revert()
     }, [content])
-
     useEffect(() => {
         return () => { ScrollTrigger.refresh() }
     }, [])
-
     return (
         <div ref={component} className='w-full h-screen flex my-10 md:my-12'>
             <div ref={content} className="containerF flex w-full xl:flex-row  flex-col justify-center items-center">
@@ -55,10 +47,8 @@ const About = () => {
                         I am passionate about using the latest technologies to enhance the user experience and am always seeking new challenges to improve my skills
                     </span>
                 </span>
-
             </div>
         </div>
     )
 }
-
 export default About

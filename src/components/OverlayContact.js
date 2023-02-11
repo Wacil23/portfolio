@@ -3,7 +3,7 @@ import { useStateContext } from '../contexts/ContextProvider'
 import { useForm } from "react-hook-form";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import emailjs from '@emailjs/browser';
-import { toast, ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import gsap from 'gsap'
 gsap.registerPlugin(ScrollTrigger);
@@ -14,7 +14,6 @@ const OverlayContact = () => {
     const refButton = useRef();
     const [loading, setLoading] = useState(false)
     const { register, handleSubmit } = useForm();
-
     useEffect(() => {
         if (contact) {
             gsapTo(refForm?.current, { opacity: 1 })
@@ -22,7 +21,6 @@ const OverlayContact = () => {
             gsapTo(refForm?.current, { opacity: 0 })
         }
     }, [contact, gsapTo, marioRef])
-
     const onSubmit = data => {
         gsap.context(() => {
             gsap.timeline()
@@ -47,9 +45,6 @@ const OverlayContact = () => {
             }
             )
     };
-
-
-
     return (
         <div className='flex w-full flex-col mx-10 items-center justify-around my-44'>
             <ToastContainer />

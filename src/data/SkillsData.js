@@ -4,15 +4,12 @@ import { SiJavascript } from 'react-icons/si'
 import { SiTypescript } from 'react-icons/si'
 import { SiAngular } from 'react-icons/si'
 import { SiReact } from 'react-icons/si'
-import { SiVuedotjs } from 'react-icons/si'
-
 import { SiPhp } from 'react-icons/si'
 import { SiMysql } from 'react-icons/si'
 import { SiSymfony } from 'react-icons/si'
 import { SiRubyonrails } from 'react-icons/si'
 import { SiNodedotjs } from 'react-icons/si'
 import { SiMongodb } from 'react-icons/si'
-
 import { SiWordpress } from 'react-icons/si'
 import { SiFigma } from 'react-icons/si'
 import { SiAdobephotoshop } from 'react-icons/si'
@@ -21,8 +18,6 @@ import { SiGnubash } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 import { SiPostman } from 'react-icons/si'
 import { SiSass } from 'react-icons/si'
-
-
 export const mySkills =
 {
     front: [
@@ -131,12 +126,4 @@ export const mySkills =
             logo: <TbApi />
         },//ApiPlatform
     ]
-}
-
-export const mySkillsBack = [
-
-
-];
-export const mySkillsOthers = [
-
-];
+};
