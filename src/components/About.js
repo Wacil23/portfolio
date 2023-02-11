@@ -12,7 +12,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: content.current,
                     start: '120 center',
-                    end: '+=40',
+                    end: '+=',
                     snap: 1,
                     toggleActions: 'restart none reverse reverse',
                 },
@@ -30,7 +30,7 @@ const About = () => {
     return (
         <div ref={component} className='w-full h-screen flex my-10 md:my-12'>
             <div ref={content} className="containerF flex w-full xl:flex-row  flex-col justify-center items-center">
-                <span className='md:w-52 mx-auto md:mx-44 md:flex-col md:mb-0 mb-8 relative z-10 text-5xl md:text-6xl font-mabryBlack text-white uppercase'>about
+                <span className='md:w-52 mx-auto md:mx-44 md:flex-col md:mb-0 mb-8 relative z-10 text-4xl md:text-6xl font-mabryBlack text-white uppercase'>about
                     <span className='font-retro w-full flex '> me
                         <div className='square md:w h-12 md:h-16 rounded-lg md:left-0  -z-[1] absolute bg-[#FFB800]' />
                     </span>

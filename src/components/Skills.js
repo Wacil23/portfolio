@@ -29,8 +29,8 @@ const Skills = () => {
             setWFront(0)
             setWBack(0)
         }
-        ctx('.squared', 'top center', '+=40', false, 'restart none reverse reverse', '.squared', { width: '100%' })
-
+        const ab = ctx('.squared', 'top center', '+=', false, 'restart none reverse reverse', '.squared', { width: '100%' })
+        return () => ab.revert()
     }, [])
 
     useEffect(() => {
@@ -82,7 +82,7 @@ const Skills = () => {
     return (
         <div className='w-full h-screen flex flex-col'>
             <div className="container w-full flex md:items-start md:justify-start items-center justify-center ">
-                <span className='md:w-fit md:mx-44 mx-auto md:text-left md:mb-0 mb-8 relative z-10 md:text-6xl text-5xl font-mabryBlack text-white uppercase w-fit'>my
+                <span className='md:w-fit md:mx-44 mx-auto md:text-left md:mb-0 mb-8 relative z-10 md:text-6xl text-4xl font-mabryBlack text-white uppercase w-fit'>my
                     <span className='font-retro  flex w-full '> skills
                         <div className='squared h-12 md:h-16 rounded-lg  -z-[1] absolute bg-[#FFB800]' />
                     </span>

@@ -34,7 +34,7 @@ const Projects = () => {
     return (
         <div className='w-full lg:h-screen h-full flex flex-col '>
             <div className="containerPro w-full  mt-44 flex md:items-start md:justify-start items-center justify-center  ">
-                <span className='md:w-fit md:mx-44 mx-auto relative z-10  md:text-6xl text-5xl md:mb-0 mb-8 font-mabryBlack text-white uppercase'>my
+                <span className='md:w-fit md:mx-44 mx-auto relative z-10  md:text-6xl text-4xl md:mb-0 mb-8 font-mabryBlack text-white uppercase'>my
                     <span className='font-retro flex w-full'> projects
                         <div className='squaredPro w-0 md:h-16 h-12 rounded-lg  -z-[1] absolute bg-[#FFB800]' />
                     </span>
